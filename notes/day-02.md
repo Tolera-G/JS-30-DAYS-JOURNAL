@@ -1,11 +1,5 @@
 # Day 02: variables, data types, and templeta literals
 
-Date: November 12, 2026
-Today I learned:
-Something that confused me:
-What I can explain without help:
-Bug or challenge, and how I solved it:
-Tomorrow's first task:
 Variable is a "named storage" for data. 
 The 'var' keyword is almost the same as 'let'. It also declares a variable but in a slightly different, "old-school" way.
 A variable should be declared only once. A repeated declaration of the same variable is an error.
