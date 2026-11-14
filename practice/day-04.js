@@ -33,3 +33,11 @@ else{
     output="this number is negative"
 }
 console.log(output);
+//Exercise-C: Falsy prediction
+Boolean(0);//false
+Boolean("0");//true
+Boolean("");//false
+Boolean(" ");//true
+Boolean(NaN);//false
+Boolean([]);//true
+
