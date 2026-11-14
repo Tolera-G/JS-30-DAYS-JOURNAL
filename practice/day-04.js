@@ -1,6 +1,5 @@
-let score;
 let grade=prompt("Enter your score (0-100):");
-score =Number(grade);
+let score =Number(grade);
 let result;
  
 if (score>=90) {
