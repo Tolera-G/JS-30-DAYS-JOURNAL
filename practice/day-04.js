@@ -1,3 +1,4 @@
+//Exercise A: Grade classifier.
 let grade=prompt("Enter your score (0-100):");
 let score =Number(grade);
 let result;
@@ -18,3 +19,17 @@ else {
     result="F";
 }
 console.log(result);
+//Exercise-B: Positive, zero or negative
+let num=prompt("Enter the number you want: ");
+let n=Number(num);
+let output;
+if(n==0){
+    output="this number is Zero";
+}
+else if(n>0){
+    output="this number is is positive";
+}
+else{
+    output="this number is negative"
+}
+console.log(output);
