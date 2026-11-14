@@ -42,12 +42,6 @@ Since NaN === NaN is false, I can't check for NaN with ===. Number.isNaN(value) 
 
 I left one value as a string in the total. The result was "800400600100" instead of 1900, because + joined the text instead of adding.
 
-## Today I learned
-
-## Something that confused me
-
-## What I can explain without help
-
 ## Bug or challenge, and how I solved it
 I reassigned a const, so the script crashed. Number() returns a value, so I have to store it.
 
