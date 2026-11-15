@@ -55,7 +55,7 @@ Everything else is truthy, including `"0"`, `" "` and `[]`.
 - Fix: do the status check inside the same block.
 
 ## Something that confused me
-- (fill in)
+- adding the status logic confused me 
 
 ## Tomorrow's first task
 - Day 5: move this logic into functions that **return** values. 
