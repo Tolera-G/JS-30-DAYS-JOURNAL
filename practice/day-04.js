@@ -23,7 +23,7 @@ console.log(result);
 let num=prompt("Enter the number you want: ");
 let n=Number(num);
 let output;
-if(n==0){
+if(n===0){
     output="this number is Zero";
 }
 else if(n>0){
