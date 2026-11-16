@@ -20,3 +20,8 @@ function larger(a, b) {
         return b;
 }
 console.log(larger(5,5));
+//Exercise-3
+let add=(a,b) => a+b;
+console.log(add(4,4));
+let largerArrow = (a, b) => a > b ? a : b;
+console.log(largerArrow(800,40));
