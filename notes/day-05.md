@@ -6,3 +6,4 @@ What is the difference between a parameter and an argument?
 -we declare functions listing their parameters, then call them passing arguments.
 What is the difference between return and console.log? What happens to a function that never returns anything?
 What does a function declaration look like compared with a function expression and an arrow function?
+-compared to both function expression and arrow function, funcation declaration looks like a little bit old, and cumbersome. 
