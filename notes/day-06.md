@@ -9,3 +9,4 @@ textContent is used for display elements (like paragraphs [<p>](https://develope
 
 value is used for form elements (like <input>, <textarea>, or <select>). It gets or sets the current text typed or selected inside that interactive form field.
 4. In button.addEventListener("click", handler), who calls handler, and when?
+-the browser calls it, it calls it automatically the exact moment a "click" event happens on that button.
