@@ -10,11 +10,39 @@
   <p id="message">Hello! Click the button to change me.</p>
   <button onclick="changeText()">Click Me!</button>
 
+  <h2>Double Calculator</h2>
+
+    <input type="text" id="userInput" placeholder="Enter a number">
+
+    <button onclick="calculateDouble()">Calculate</button>
+
+    <p id="result">Your result will appear here.</p>
+
    <script>
     function changeText() {
         document.getElementById("message").textContent = "You clicked the button!";
     }
+
+            function calculateDouble() {
+
+            // Read the input value
+            let value = document.getElementById("userInput").value;
+
+            // Check its data type
+            console.log(typeof value);
+
+            // Convert text into a number
+            let number = Number(value);
+
+            // Calculate double
+            let double = number * 2;
+
+            // Display the result
+            document.getElementById("result").textContent =
+                "Double: " + double;
+        }
+
    </script>
-   //Exer
+  
 </body>
 </html>
