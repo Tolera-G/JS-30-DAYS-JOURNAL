@@ -1,48 +1,57 @@
-//Exercise-1:Click to Change
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>click to Change</title>
+    <title>Change CSS Class</title>
+
+    <style>
+        .good {
+            color: green;
+            font-weight: bold;
+        }
+
+        .bad {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <p id="message">Hello! Click the button to change me.</p>
-  <button onclick="changeText()">Click Me!</button>
 
-  <h2>Double Calculator</h2>
+    <h2>Number Checker</h2>
 
     <input type="text" id="userInput" placeholder="Enter a number">
 
-    <button onclick="calculateDouble()">Calculate</button>
+    <button onclick="checkNumber()">Check</button>
 
     <p id="result">Your result will appear here.</p>
 
-   <script>
-    function changeText() {
-        document.getElementById("message").textContent = "You clicked the button!";
-    }
+    <script>
+        function checkNumber() {
 
-            function calculateDouble() {
-
-            // Read the input value
+            // Read input
             let value = document.getElementById("userInput").value;
 
-            // Check its data type
-            console.log(typeof value);
-
-            // Convert text into a number
+            // Convert to number
             let number = Number(value);
 
-            // Calculate double
-            let double = number * 2;
+            // Find paragraph
+            let result = document.getElementById("result");
 
-            // Display the result
-            document.getElementById("result").textContent =
-                "Double: " + double;
+            // Change text
+            result.textContent = "Your number is: " + number;
+
+            // Remove old classes
+            result.classList.remove("good", "bad");
+
+            // Apply the correct class
+            if (number >= 10) {
+                result.classList.add("good");
+            } else {
+                result.classList.add("bad");
+            }
         }
+    </script>
 
-   </script>
-  
 </body>
 </html>
